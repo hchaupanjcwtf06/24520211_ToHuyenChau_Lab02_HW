@@ -1,0 +1,6 @@
+HW1 — Controlled before/after bug reproduction
+These are deliberately constructed demonstrations, NOT historical AI mistakes.
+01 HTML injection: BEFORE=FAIL_REPRODUCED; AFTER=PASS
+02 Duplicate event listener: BEFORE=FAIL_REPRODUCED; AFTER=PASS
+03 Unstable index key on reorder: BEFORE=FAIL_REPRODUCED; AFTER=PASS
+RESULT: 3/3 flaws reproduced; 3/3 corrections passed.

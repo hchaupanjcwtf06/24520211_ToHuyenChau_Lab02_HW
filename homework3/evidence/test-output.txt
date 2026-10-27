@@ -1,0 +1,52 @@
+
+> lab02-homework3-flash-sale@1.0.0 test
+> node --experimental-strip-types --test tests/*.test.ts
+
+TAP version 13
+# (node:696) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: remaining time uses absolute deadline; no interval accumulation/drift
+ok 1 - remaining time uses absolute deadline; no interval accumulation/drift
+  ---
+  duration_ms: 1.98986
+  type: 'test'
+  ...
+# Subtest: anti-drift timer handles delayed RAF and cleans up
+ok 2 - anti-drift timer handles delayed RAF and cleans up
+  ---
+  duration_ms: 2.131542
+  type: 'test'
+  ...
+# Subtest: no oversell after concurrent orders for the last units
+ok 3 - no oversell after concurrent orders for the last units
+  ---
+  duration_ms: 3.698951
+  type: 'test'
+  ...
+# Subtest: reservation lifecycle checkout and idempotent rejection
+ok 4 - reservation lifecycle checkout and idempotent rejection
+  ---
+  duration_ms: 2.665701
+  type: 'test'
+  ...
+# Subtest: cancel returns available stock and invalid quantity cannot corrupt it
+ok 5 - cancel returns available stock and invalid quantity cannot corrupt it
+  ---
+  duration_ms: 5.616471
+  type: 'test'
+  ...
+# Subtest: FIFO queue processes in arrival order, including after rejection
+ok 6 - FIFO queue processes in arrival order, including after rejection
+  ---
+  duration_ms: 0.90452
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 438.239963
